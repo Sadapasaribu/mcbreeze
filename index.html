@@ -3,55 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Minecraft-Style Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>TheBreeze</title>
+    <meta name="description" content="Cheap Minecraft Server Hosting">
+    <meta name="keywords" content="minecraft hosting servers cheap, host minecraft server cheap, cheap hosting minecraft server, budget minecraft server host, budget hosting minecraft server ">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+        
+            if (this.hash !== "") {
+              event.preventDefault();
+        
+              var hash = this.hash;
+        
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+        </script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Minecraft-Inspired Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home">
-        <h2>Explore the Blocky World</h2>
-        <p>Inspired by the pixelated beauty of Minecraft, this site brings the essence of adventure to you.</p>
-    </section>
-    
-    <section id="about">
-        <h2>About</h2>
-        <p>This website is created with a Minecraft-themed aesthetic, featuring pixel-style elements and blocky layouts.</p>
-    </section>
-    
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Check out some pixel art and Minecraft-style builds!</p>
-        <div class="gallery-grid">
-            <img src="block1.png" alt="Block Image 1">
-            <img src="block2.png" alt="Block Image 2">
-            <img src="block3.png" alt="Block Image 3">
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Want to collaborate? Get in touch!</p>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Minecraft-Style Website. Not affiliated with Mojang.</p>
-    </footer>
+    <div class="container">
+        <div class="gray-bg" id="gray-bg1"></div>
+        <header id="navbar">
+            <a href="" id="home" class="nav-text">THEBREEZE</a>
+            <a href="aboutus/aboutus.html" class="nav-text">About Us</a>
+        </header>
+        <section id="page1">
+            <!--<img id="page1-logo" src="images/logo.png" alt="creeperlogo">-->
+            <div class="title">
+                <h1 id="host-mc">Host MC Servers in a</h1>
+                <h1 id="breeze" class="neon">BREEZE</h1>
+                <pre id="slogan">The new and most efficient way to host a minecraft server.</pre>
+            </div>
+            <div class="hero-buttons">
+                <div class="button1">
+                    <a href="#goto"class="sub-button" id="fb1"></a>
+                    <b class="sub-button" id="db1"></b>
+                    <h2 id="basic-tier">Basic</h2>
+                    <h2 id="price1">14.999</h2>
+                    <h3 class="per-week" id="w1">idr/week</h3>
+                    <h3 id="tier-desc1">2 GB • 8 Slots</h3>
+                </div>
+                <div class="button2">
+                    <a href="#goto" class="sub-button" id="fb2"></a>
+                    <b class="sub-button" id="db2"></b>
+                    <h2 id="premium-tier">Premium</h2>
+                    <h2 id="price2">19.999</h2>
+                    <h3 class="per-week" id="w2">idr/week</h3>
+                    <h3 id="tier-desc2">8 GB • 12 Slots • Mod</h3>
+                </div>
+            </div>
+        </section>
+        <section id="page2">
+            <h1 class="neon" id="p2-slogan-1">Efficiency</h1>
+            <h1 id="p2-slogan-2">is our Speciality</h1>
+            <pre id="p2-slogan-desc">With friendly customer support, and fast services, 
+you can get your minecraft servers and play in no time.
+            </pre>
+        </section>
+        <section id="page3">
+            <div id="goto"></div>
+            <h1 id="p3-slogan-1">We've got a lot on the</h1>
+            <h1 id="p3-slogan-2"class="neon">menu.</h1>
+            <div id="subscription-tier1">
+                <div class="subscription-box" id="sub-box1"></div>
+                <h2 id="tier-1">Basic</h2>
+                <h1 id="price-1">14.999</h1>
+                <pre id="w3">idr/week</pre>
+                <pre id="sub-description1">                    • 2GB of RAM
+
+                    • 8 Slots
+        
+                    • Very Cheap and affordable
+        
+                    • Great for first time buyers</pre>
+                <b></b>
+                <button id="buy-button1" class="buy-button">Buy Now</button>
+            </div>
+            <div id="subscription-tier2">
+                <div class="subscription-box" id="sub-box2"></div>
+                <h2 id="tier-2">Premium</h2>
+                <h1 id="price-2">19.999</h1>
+                <pre id="w4">idr/week</pre>
+                <pre id="sub-description2">                    • 8GB of RAM
+
+                    • 12 Slots
+        
+                    • Moddable
+        
+                    • Great for long-term use</pre>
+                <b></b>
+                <button id="buy-button2" class="buy-button">Buy Now</button>
+            </div>
+            <div id="subscription-tier3">
+                <div class="subscription-box" id="sub-box3"></div>
+                <h2 id="tier-3">Gold</h2>
+                <h1 id="price-3">17.999</h1>
+                <pre id="w5">idr/week</pre>
+                <pre id="sub-description3">                    • 4GB of RAM
+
+                    • 8 Slots
+        
+                    • Best value to price ratio
+        
+                    • Great for budget-conscious 
+                       customers</pre>
+                <b></b>
+                <button id="buy-button3" class="buy-button">Buy Now</button>
+            </div>
+        </section>
+        <section id="page4">
+            <div class="gray-bg" id="gray-bg2"></div>
+            <h1 id="p4-slogan-why-us">Why us</h1>
+            <h1 class="neon" id="p4-slogan-qm">?</h1>
+            <b class="why-slogan" id="page4-easy-cancel">Easy cancellation</b>
+            <b class="why-slogan" id="page4-fast-effect">Fast, effective and efficient</b>
+            <b class="why-slogan" id="page4-friendly-cs">Friendly and excellent customer support</b>
+            <b class="why-slogan" id="page4-cheap-affordable">Cheap and affordable</b>
+        </section>
+        <section id="page5">
+            <h1 id="page5-need">Need</h1>
+            <h1 class="neon" id="page5-help">help?</h1>
+            <pre id="page5-desc">Join our discord below to get our help! *or call us using our phone number*</pre>
+            <a href="bit.ly/BreezeMC" id="page5-discord-link">bit.ly/BreezeMC</a>
+            <pre id="page5-number">+62 813-1871-3400</pre>
+            <div id="extender"></div>
+        </section>
+    </div>
 </body>
 </html>
